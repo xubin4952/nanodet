@@ -226,7 +226,7 @@ int image_demo(NanoDet &detector, const char* imagepath)
 {
     // const char* imagepath = "D:/Dataset/coco/val2017/*.jpg";
 
-    std::vector<std::string> filenames;
+    std::vector<cv::String> filenames;
     cv::glob(imagepath, filenames, false);
 
     for (auto img_name : filenames)
